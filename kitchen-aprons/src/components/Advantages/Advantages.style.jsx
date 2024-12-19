@@ -3,8 +3,7 @@ import styled from "@emotion/styled";
 export const BlockA=styled.div`
 display:grid;
 grid-template-colums:repeat(1,1fr);
-// text-align:center;
-padding:10%;
+padding:5%;
 
 `
 export const BlockText=styled.p`

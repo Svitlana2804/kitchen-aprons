@@ -1,21 +1,12 @@
-import Advantages from "./Advantages/Advantages.jsx"
-import ButtonOrder from "./ButtonOrder/ButtonOrder.jsx"
-import Catalog from "./Catalog/Catalog.jsx"
-import Contacts from "./Contacts/Contacts.jsx"
-import {} from "./NavMenu.style.jsx"
-import Reviews from "./Reviews/Reviews.jsx"
-
+import {LinkMenu, NavMenuList} from './NavMenu.style'
 export default function NavMenu(){
     return(
-        <>
-        <>
-        {/* <Home/> */}
-        <Advantages/>
-        <Catalog/>
-        <Reviews/>
-        <Contacts/>
-        </>
-        <ButtonOrder/>
-        </>
+        <NavMenuList >
+      <li><LinkMenu href="*">Головна</LinkMenu></li> 
+      <li><LinkMenu href="#advantages">Переваги</LinkMenu></li>
+      <li><LinkMenu href="#catalog">Каталог</LinkMenu></li>
+      <li><LinkMenu href="#reviews">Відгуки</LinkMenu></li>
+      <li><LinkMenu href="#contacts">Контакти</LinkMenu></li>
+        </NavMenuList>
     )
 }

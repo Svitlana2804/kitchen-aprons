@@ -1,11 +1,11 @@
 import { CatalogBlock, CatImg, TextOverlay, CatalogItem, Description } from "./Catalog.style";
-import Photo1 from "../../../../assets/camomile.webp";
-import Photo2 from "../../../../assets/coffee.webp";
-import Photo3 from "../../../../assets/fruits.webp";
-import Photo4 from "../../../../assets/home.webp";
-import Photo5 from "../../../../assets/lavande.jpg";
-import Photo6 from "../../../../assets/orchidea.webp";
-import Photo7 from "../../../../assets/uzbeck.webp";
+import Photo1 from "../../assets/camomile.webp";
+import Photo2 from "../../assets/coffee.webp";
+import Photo3 from "../../assets/fruits.webp";
+import Photo4 from "../../assets/home.webp";
+import Photo5 from "../../assets/lavande.webp";
+import Photo6 from "../../assets/orchidea.webp";
+import Photo7 from "../../assets/uzbeck.webp";
 import React, { useState } from "react";
 export default function Catalog() {
     const [activeDescription, setActiveDescription] = useState(null);
@@ -13,7 +13,7 @@ export default function Catalog() {
         setActiveDescription(activeDescription === index ? null : index);
       };
   return (
-    <CatalogBlock>
+    <CatalogBlock id="catalog">
       <CatalogItem>
         <CatImg src={Photo1} alt="img1" />
         <TextOverlay onClick={toggleDescription}>Подробиці</TextOverlay>

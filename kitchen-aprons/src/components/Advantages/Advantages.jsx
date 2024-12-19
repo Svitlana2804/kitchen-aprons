@@ -2,7 +2,7 @@ import { BlockA, BlockText } from "./Advantages.style"
 
 export default function Advantages(){
     return(
-        <BlockA>
+        <BlockA id="advantages">
         <BlockText>
         <svg 
   xmlns="http://www.w3.org/2000/svg" 
