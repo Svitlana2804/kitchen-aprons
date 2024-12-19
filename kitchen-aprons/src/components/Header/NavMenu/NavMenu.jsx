@@ -9,7 +9,7 @@ export default function NavMenu(){
     return(
         <>
         <>
-        <Home/>
+        {/* <Home/> */}
         <Advantages/>
         <Catalog/>
         <Reviews/>
