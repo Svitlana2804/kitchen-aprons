@@ -1,52 +1,12 @@
-// import styled from "@emotion/styled";
-
-// export const CatalogBlock=styled.section`
-// display:grid;
-// grid-template-columns: 1fr 1fr 1fr;
-// grid-gap:10px;
-// `
-// export const CatalogItem = styled.div`
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   overflow: hidden;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-// export const CatImg=styled.img`
-// width:350px;
-// height:250px;
-// transition: opacity 0.3s ease;
-// `
-// export const TextOverlay = styled.div`
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   color: white;
-//   font-size: 20px;
-//   font-weight: bold;
-//   opacity: 0;
-//   transition: opacity 0.3s ease;
-// `;
-
-// export const ImageContainer = styled.div`
-//   &:hover ${CatImg} {
-//     opacity: 0.6; 
-//   }
-
-//   &:hover ${TextOverlay} {
-//     opacity: 1;
-//   }
-// `;
-
 import styled from "@emotion/styled";
 
 export const CatalogBlock = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+ @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr; 
+  }
 `;
 
 export const CatalogItem = styled.div`
@@ -58,10 +18,6 @@ export const CatalogItem = styled.div`
   justify-content: center;
   align-items: center;
 
-  /* Додаємо ефект hover на контейнер */
- 
-
- 
 `;
 
 export const CatImg = styled.img`
@@ -101,4 +57,9 @@ export const Description=styled.div`
   width: 90%;
   text-align: center;
   opacity: 0.9;
+`
+export const CatalogTitle=styled.h2`
+font-size:28px;
+text-align:center;
+padding:1%;
 `

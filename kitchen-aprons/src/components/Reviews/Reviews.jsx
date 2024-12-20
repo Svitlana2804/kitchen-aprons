@@ -34,10 +34,10 @@
 //     </Swiper>
 //         </>
 //     )
-// }
+// } цей верхній закоментований варіант був зроблений за допомогою swiper, видаляти було шкода, тому закоментувала :)
 
 import { useEffect, useState } from "react";
-import { NextButton, PrevButton, Slide, SlideImage, SlideName, SliderContainer, SlideText, SlideTrack } from "./Reviews.style"
+import { NextButton, PrevButton, Slide, SlideImage, SlideName, SliderContainer, SlideText, SlideTitle, SlideTrack } from "./Reviews.style"
 import People1 from '../../assets/p1.webp'
 import People2 from '../../assets/p2.webp'
 import People3 from '../../assets/p3.webp'
@@ -68,6 +68,7 @@ export default function Reviews()  {
 
   return (
     <SliderContainer id="reviews">
+      <SlideTitle>Відгуки наших клієнтів</SlideTitle>
       <SlideTrack style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slides.map((slide, index) => (
           <Slide key={index}>

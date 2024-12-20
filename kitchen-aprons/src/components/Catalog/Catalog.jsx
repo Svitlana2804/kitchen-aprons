@@ -1,4 +1,4 @@
-import { CatalogBlock, CatImg, TextOverlay, CatalogItem, Description } from "./Catalog.style";
+import { CatalogBlock, CatImg, TextOverlay, CatalogItem, Description, CatalogTitle } from "./Catalog.style";
 import Photo1 from "../../assets/camomile.webp";
 import Photo2 from "../../assets/coffee.webp";
 import Photo3 from "../../assets/fruits.webp";
@@ -13,7 +13,9 @@ export default function Catalog() {
         setActiveDescription(activeDescription === index ? null : index);
       };
   return (
-    <CatalogBlock id="catalog">
+    <>
+  <CatalogTitle id="catalog">Каталог нашої продукції</CatalogTitle>
+    <CatalogBlock >
       <CatalogItem>
         <CatImg src={Photo1} alt="img1" />
         <TextOverlay onClick={toggleDescription}>Подробиці</TextOverlay>
@@ -71,5 +73,6 @@ export default function Catalog() {
         )}
       </CatalogItem>
     </CatalogBlock>
+    </>
   );
 }

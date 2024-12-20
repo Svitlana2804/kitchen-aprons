@@ -1,13 +1,5 @@
 import styled from "@emotion/styled";
 
-// export const StyledImg =styled.img`
-// border-radius: 30px;
-//   width: 70px;
-//   height: 70px;
-//   object-fit: cover;
-//   padding:0 1%;
-// `
-
 export const SliderContainer = styled.div`
   position: relative;
   width: 80%;
@@ -56,4 +48,9 @@ font-size:18px;
 
 export const SlideText=styled.p`
 font-size:15px;
+`
+export const SlideTitle=styled.h2`
+font-size:28px;
+text-align:center;
+padding:1%;
 `

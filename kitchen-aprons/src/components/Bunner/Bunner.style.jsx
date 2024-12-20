@@ -6,6 +6,9 @@ background-size: cover;
   background-position: center;
   height: 80vh; 
   text-align:center;
+  @media (max-width: 768px) {
+  height:50vh;
+  }
  `
  export const BunnerTitle=styled.h1`
  font-size:45px;
@@ -16,6 +19,9 @@ padding:8%;
     1px -1px 0 white, 
     -1px 1px 0 white, 
     1px 1px 0 white;
+    @media (max-width: 768px) {
+    font-size:23px;
+  }
 `;
  
  export const BunnerSubTitle=styled.h2`

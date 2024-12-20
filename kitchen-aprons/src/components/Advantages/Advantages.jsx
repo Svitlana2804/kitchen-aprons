@@ -1,8 +1,9 @@
-import { BlockA, BlockText } from "./Advantages.style"
+import { BlockA, BlockText, BlockTitle } from "./Advantages.style"
 
 export default function Advantages(){
     return(
         <BlockA id="advantages">
+          <BlockTitle>Переваги</BlockTitle>
         <BlockText>
         <svg 
   xmlns="http://www.w3.org/2000/svg" 

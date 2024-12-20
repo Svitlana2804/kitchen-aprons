@@ -78,8 +78,3 @@ export const StyledTextarea = styled.textarea`
     margin-top: 4px;
   `
   
-//   @media (max-width: 480px) {
-//     form {
-//       width: 90%;
-//     }
-//   }
